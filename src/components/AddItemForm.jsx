@@ -23,8 +23,9 @@ export default function AddItemForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Add an item</h2>
+      <h2 className="text-[#231d15] text-base font-medium">Add an item</h2>
       <input
+        className="h-[45px] w-full border text-sm mt-3 mb-2 mx-0 px-4 py-0 rounded-[5px] border-solid border-[rgba(0,0,0,0.12)] placeholder:italic"
         ref={inputRef}
         value={itemText}
         onChange={(e) => {

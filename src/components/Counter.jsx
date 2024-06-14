@@ -6,7 +6,7 @@ export default function Counter() {
   const totalNumberOfItems = items.length;
 
   return (
-    <p>
+    <p className="text-[#231d15] text-sm">
       <b>{numberOfItemsPacked}</b> / {totalNumberOfItems} items packed
     </p>
   );

@@ -2,7 +2,12 @@ import { useItemsActions } from "../stores/itemsStore";
 import Button from "./Button";
 
 export default function ButtonGroup() {
-  const { markAllAsComplete, markAllAsIncomplete, resetToInitial, removeAllItems } = useItemsActions();
+  const {
+    markAllAsComplete,
+    markAllAsIncomplete,
+    resetToInitial,
+    removeAllItems,
+  } = useItemsActions();
 
   const secondaryButtons = [
     {
@@ -24,7 +29,7 @@ export default function ButtonGroup() {
   ];
 
   return (
-    <section className="button-group">
+    <section className="flex flex-col gap-2 mt-auto">
       {secondaryButtons.map((button) => (
         <Button
           key={button.text + button.onClick.toString()}
